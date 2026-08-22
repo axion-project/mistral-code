@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.mistral-code/sessions/
+.mistral-code/mcp.json

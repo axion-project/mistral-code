@@ -1,0 +1,20 @@
+[project]
+name = "mistral-code"
+version = "0.2.0"
+description = "An agentic CLI coding assistant powered by Mistral models."
+requires-python = ">=3.9"
+dependencies = [
+    "mistralai>=1.0.0",
+    "rich>=13.0.0",
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+mistral-code = "mistral_code.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["mistral_code*"]
